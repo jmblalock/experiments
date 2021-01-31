@@ -10,12 +10,42 @@
   'fffff'
 */
 
-let character = 'a';
-let ans = '';
-const timesToRepeat = 50;
+// let character = 'a';
+// let ans = '';
+// const timesToRepeat = 50;
 
-for (let i = 0; i < timesToRepeat; i++) {
-	ans += character;
+// for (let i = 0; i < timesToRepeat; i++) {
+// 	ans += character;
+// }
+
+// console.log(ans);
+
+const A = "A";
+let F;
+
+function doStuff(B) {
+  console.log(B);  // greenlight
+  const C = "C";
+  let H = "H";
+  if (1 + 1 === 2) {
+    const D = "D";
+    H = "something else";
+  }
+  console.log(D); // redlight
+  console.log(H); // greenlight
+  F = "F";
 }
 
-console.log(ans);
+let E = 0;
+while (E < 3) {
+  E++;
+  console.log(A); // greenlight
+  const G = "G";
+}
+console.log(E); // greenlight
+console.log(G); // redlight
+
+doStuff("B");
+console.log(B); // redlight
+console.log(C);	// redlight
+console.log(F); // greenlight
